@@ -4,7 +4,7 @@
 #include <semaphore.h>
 #include <unistd.h>
 
-// Producer-Consumer (simplified)
+// Producer-Consumer 
 int buffer;
 sem_t empty, full;
 pthread_mutex_t mutex;
@@ -52,7 +52,7 @@ void run_producer_consumer() {
     pthread_mutex_destroy(&mutex);
 }
 
-// Dining Philosophers (simplified)
+// Dining Philosophers
 sem_t forks[2];
 
 void* philosopher(void* arg) {

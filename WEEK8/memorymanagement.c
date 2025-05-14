@@ -101,25 +101,24 @@ int main() {
 /*
 OUTPUT:
 Enter the number of blocks: 4
-Enter the number of files: 4
-Enter the sizes of 4 blocks: 200 512 362 452
-Enter the sizes of 4 files: 152 65 356 968
+Enter the number of files: 3
+Enter the sizes of 4 blocks: 100 200 300 400
+Enter the sizes of 3 files: 150 80 200
+
 
 Best Fit:
-Block 1 (200) - File 1 (152)
-Block 3 (362) - File 2 (65)
-Block 4 (452) - File 3 (356)
-File 4 (968) -> Not Allocated
+Block 1 (100) - File 2 (80)
+Block 2 (200) - File 1 (150)
+File 3 (200) -> Not Allocated
 
 First Fit:
-Block 1 (200) - File 1 (152)
-Block 2 (512) - File 2 (65)
-Block 2 (512) - File 3 (356)
-File 4 (968) -> Not Allocated
+Block 1 (100) - File 2 (80)
+Block 2 (200) - File 1 (150)
+Block 4 (400) - File 3 (200)
 
 Worst Fit:
-Block 2 (512) - File 1 (152)
-Block 4 (452) - File 2 (65)
-Block 4 (452) - File 3 (356)
-File 4 (968) -> Not Allocated
+Block 1 (100) - File 2 (80)
+Block 4 (400) - File 1 (150)
+Block 3 (300) - File 3 (200)
+
 */
